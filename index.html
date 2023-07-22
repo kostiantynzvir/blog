@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>The Blog</title>
+</head>
+<body>
+    <header>
+        <div id="header">
+            <div id="logo">
+                <a href="./index.html">The Blog<span>.</span></a>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li class="bold"><a href="./index.html"><span>|</span>Home</a></li>
+                    <li><a href="./pages/about.html">Sobre</a></li>
+                    <li><a href="./pages/categories.html">Categorias</a></li>
+                    <li><a href="./pages/contact.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div id="search">
+                <label 
+                for="search" 
+                class="sr-only">Campo de Busca:</label>
+                <input 
+                type="search" 
+                id="search-button"
+                name="search"
+                placeholder="Buscar">
+                <button><img src="./images/search.svg" alt="Botão de pesquisa" id="button"></button>
+            </div>
+            <div id="menu-button">
+                <button id='open-button' onclick="handleMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#4D7FA8" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="40" y1="128" x2="216" y2="128" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="40" y1="64" x2="216" y2="64" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="40" y1="192" x2="216" y2="192" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
+                </button>
+                <button id="close-button" onclick="handleMenu()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#4D7FA8" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="200" y1="56" x2="56" y2="200" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="200" y1="200" x2="56" y2="56" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
+                </button>
+            </div>
+        </div>    
+    </header>
+
+    <main>
+        <div id="main">
+            <div id="main-text">
+                <h1>Descubra as principais tendências em programação para ficar de olho em 2023</h1>
+                <p>No mundo da programação, estar atualizado com as últimas tendências e tecnologias é fundamental para se manter competitivo.</p>
+                <p id="see-more">
+                    <a href="./pages/posts/post-1.html">Veja mais</a>
+                    <a href="./pages/posts/post-1.html"><img src="./images/arrow-right.svg" alt="Seta"></a>
+                </p>
+            </div>
+            <img src="./images/post-1.png" alt="" id="main-img">
+        </div>    
+    </main>
+    
+    <div class="yellow-line"></div>
+
+    <section id="posts-background">
+        <div id="posts">
+            <div id="top-posts">
+                <article id="post-2">
+                    <img src="./images/post-2.png" alt="Imagem post 2">
+                    <div>
+                        <p class="date">Julho 16, 2023</p>
+                        <h2 class="title"><a href="./pages/posts/post-2.html">As 10 linguagens de programação mais promissoras para aprender em 2023</a></h2>
+                        <p class="text-post">No mundo da programação, a única constante é a mudança. A cada ano, novas linguagens de programação emergem, outras se fortalecem e algumas podem até perder relevância.</p>
+                    </div>
+                </article>
+
+                <div class="gray-line mobile-line"></div>
+
+                <div id="right-posts">
+                    <article>
+                        <p class="date">Julho 17, 2023</p>
+                        <h2 class="title"><a href="pages/posts/post-3.html">Como se preparar para uma entrevista de emprego em programação</a></h2>
+                        <p class="text-post">Conseguir uma entrevista de emprego na área de programação é uma grande conquista, mas a jornada para garantir a vaga desejada está apenas começando.</p>
+                    </article>
+
+                    <div class="gray-line"></div>
+
+                    <article>
+                        <p class="date">Julho 18, 2023</p>
+                        <h2 class="title"><a href="./pages/posts/post-4.html">Aprenda os fundamentos da programação de forma simples e prática</a></h2>
+                        <p class="text-post">Se você está começando sua jornada no mundo da programação, pode parecer assustador à primeira vista. No entanto, dominar os fundamentos é essencial para construir uma base sólida e alcançar o sucesso como desenvolvedor.</p>
+                    </article>
+
+                    <div class="gray-line mobile-line"></div>
+                </div>
+            </div>
+
+            <div id="bottom-posts">
+                <article id="post-5">
+                    <div class="gray-line mobile-line"></div>
+                    <img src="./images/post-5.png" alt="Imagem post 5">
+                        <div>
+                            <p class="date">Janeiro 04, 2022</p>
+                            <h2 class="title"><a href="./pages/posts/post-5.html">Como lidar com bugs e depuração de código de forma eficiente</a></h2>
+                            <p class="text-post">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique. </p>
+                        </div>
+                </article>
+
+                <article id="post-6">
+                    <div class="gray-line mobile-line"></div>
+                    <img src="./images/post-6.png" alt="Imagem post 6">
+                    <div>
+                        <p class="date">Janeiro 04, 2022</p>
+                        <h2 class="title"><a href="./pages/posts/post-6.html">Os segredos para escrever um código limpo e legível</a></h2>
+                        <p class="text-post">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique.</p>
+                        
+                    </div>
+                </article>
+
+                <article id="post-7">
+                    <img src="./images/post-7.png" alt="Imagem post 7">
+                    <div>
+                        <p class="date">Janeiro 04, 2022</p>
+                        <h2 class="title"><a href="./pages/posts/post-7.html">Dicas e truques para acelerar o desenvolvimento de aplicativos</a></h2>
+                        <p class="text-post">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <div id="logo">
+                <a href="./index.html">The Blog<span>.</span></a>
+            </div>
+            <p>© 2023 The Blog. | Todos os Direitos Reservados</p>
+        </div>
+    </footer>
+    
+    <script src="./index.js"></script>
+</body>
+</html>

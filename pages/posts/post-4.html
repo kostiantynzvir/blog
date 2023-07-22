@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>The Blog - Aprenda os fundamentos da programação de forma simples e prática</title>
+</head>
+<body>
+  <header>
+    <div id="header">
+        <div id="logo">
+            <a href="../../index.html">The Blog<span>.</span></a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../about.html">Sobre</a></li>
+                <li><a href="../categories.html">Categorias</a></li>
+                <li><a href="../contact.html">Contato</a></li>
+            </ul>
+        </nav>
+        <div id="search">
+            <label 
+            for="search" 
+            class="sr-only">Campo de Busca:</label>
+            <input 
+            type="search" 
+            id="search-button"
+            name="search"
+            placeholder="Buscar">
+            <button><img src="../../images/search.svg" alt="Botão de pesquisa" id="button"></button>
+        </div>
+        <div id="menu-button">
+            <button id='open-button' onclick="handleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#4D7FA8" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="40" y1="128" x2="216" y2="128" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="40" y1="64" x2="216" y2="64" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="40" y1="192" x2="216" y2="192" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
+            </button>
+            <button id="close-button" onclick="handleMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#4D7FA8" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="200" y1="56" x2="56" y2="200" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="200" y1="200" x2="56" y2="56" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
+            </button>
+        </div>
+    </div>    
+    <div class="yellow-line"></div>
+  </header>
+
+  <main class="main-post">
+    <div>
+      <span class="date">Julho 18, 2023</span>
+      <h1>Aprenda os fundamentos da programação de forma simples e prática</h1>
+
+      <p>
+        Se você está <strong>começando sua jornada no mundo da programação</strong>, pode parecer assustador à primeira vista. No entanto, <strong>dominar os fundamentos</strong> é essencial para <strong>construir uma base sólida</strong> e <strong>alcançar o sucesso como desenvolvedor</strong>.
+      </p>
+      <p>
+        Neste post, vamos <strong>mergulhar nos conceitos essenciais da programação de maneira descomplicada</strong>. Desde entender <strong>o que é um algoritmo</strong> até <strong>explorar estruturas de dados fundamentais</strong>, acompanharemos você em cada passo do processo.
+      </p>
+      <p>
+        Não importa se seu objetivo é se tornar um <strong>desenvolvedor web</strong>, <strong>criar aplicativos móveis</strong> ou <strong>trabalhar com análise de dados</strong>, entender os fundamentos é o primeiro passo para <strong>desbloquear um mundo de possibilidades</strong>. Com uma <strong>abordagem prática</strong> e <strong>exemplos fáceis de seguir</strong>, você estará pronto para <strong>encarar desafios mais complexos</strong> conforme avança em sua jornada de aprendizado.
+      </p>
+      <p>
+        Então, prepare-se para adquirir o <strong>conhecimento necessário para programar com confiança e eficiência</strong>. Vamos começar do básico e, em pouco tempo, você estará <strong>capacitado a criar seus próprios programas</strong> e <strong>soluções criativas</strong>. Abrace o <strong>potencial ilimitado da programação</strong> e comece agora mesmo a <strong>construir o futuro com suas habilidades recém-adquiridas</strong>.
+      </p>
+      <p>
+        A programação é a <strong>arte de dar instruções a um computador para que ele realize tarefas específicas</strong>. Essas instruções são escritas em <strong>linguagens de programação</strong>, que são <strong>conjuntos de comandos compreensíveis tanto para humanos quanto para máquinas</strong>. O objetivo é <strong>criar um conjunto lógico de ações</strong> que o <strong>computador possa seguir para alcançar um resultado desejado</strong>.
+      </p>
+      <p>
+        Existem diversas linguagens de programação, cada uma com suas <strong>características</strong> e <strong>usos específicos</strong>. No entanto, usaremos <strong>Javascript</strong> nos nossos exemplos, mas não se preocupe, pois <strong>todos os conceitos fundamentais são comuns a quase todas elas</strong>. Vamos explorar alguns deles:
+      </p>
+
+      <ul>
+        <li>
+          <h2>Variáveis</h2>
+          <p>
+            As <strong>variáveis</strong> são <strong>espaços na memória do computador onde podemos armazenar informações</strong>. Elas têm um <strong>nome</strong> e um <strong>valor associado</strong>. Por exemplo, uma variável chamada &#34;idade&#34; pode conter o valor 30.
+          </p>
+          <pre>
+<code class="comment">// Criando uma variável com valor 30</code>
+<code><span class="var">let</span> idade = <span class="number">30</span></code></pre>
+        </li>
+        <li>
+          <h2>Tipos de dados</h2>
+          <p>
+            As variáveis podem armazenar diferentes tipos de dados, como <strong>números inteiros</strong>, <strong>números decimais</strong>, <strong>caracteres</strong> (string) e <strong>booleanos</strong> (verdadeiro ou falso).
+          </p>
+        </li>
+        <pre>
+<code class="comment">// Criando uma variável com caracteres</code>
+<code><span class="var">let</span> texto <span class="var">=</span> <span class="string">&#34;Olá mundo!&#34;</span></code>
+<code></code>
+<code class="comment">// Criando uma variável com número decimal</code>
+<code><span class="var">let</span> numero <span class="var">=</span> <span class="number">19.153</span></code>
+<code></code>
+<code class="comment">// Criando uma variável com valor booleano</code>
+<code><span class="var">let</span> booleano <span class="var">=</span> <span class="number">true</span></code></pre>
+        <li>
+          <h2>Operadores</h2>
+          <p>
+            Os operadores são <strong>símbolos que nos permitem realizar operações matemáticas ou lógicas</strong>. Alguns exemplos são <strong>&#34;+&#34;</strong>, <strong>&#34;-&#34;</strong>, <strong>&#34;*&#34;</strong>, <strong>&#34;/&#34;</strong>, <strong>&#34;&#62;&#34;</strong>, <strong>&#34;&#60;&#34;</strong> e <strong>&#34;==&#34;</strong>. Por exemplo, usando o operador &#34;+&#34;, podemos somar dois números.
+          </p>
+          <pre>
+<code class="comment">// Usando o símbolo &#34;+&#34; (adição)</code>
+<code>console.<span class="function">log</span><span class="first-group">(</span><span class="number">8</span> <span class="var">+</span> <span class="number">12</span><span class="first-group">)</span> <span class="comment">// Saída: 20</span></code>
+<code></code>
+<code class="comment">// Usando o símbolo &#34;-&#34; (subtração)</code>
+<code>console.<span class="function">log</span><span class="first-group">(</span><span class="number">30</span> <span class="var">-</span> <span class="number">5</span><span class="first-group">)</span> <span class="comment">// Saída: 25</span></code>
+<code></code>
+<code class="comment">// Usando o símbolo &#34;*&#34; (multiplicação)</code>
+<code>console.<span class="function">log</span><span class="first-group">(</span><span class="number">5</span> <span class="var">*</span> <span class="number">9</span><span class="first-group">)</span> <span class="comment">// Saída: 45</span></code>
+<code></code>
+<code class="comment">// Usando o símbolo &#34;/&#34; (divisão)</code>
+<code>console.<span class="function">log</span><span class="first-group">(</span><span class="number">58</span> <span class="var">/</span> <span class="number">2</span><span class="first-group">)</span> <span class="comment">// Saída: 29</span></code>
+<code></code>
+<code class="comment">// Usando o símbolo &#34;&#62;&#34; (maior)</code>
+<code>console.<span class="function">log</span><span class="first-group">(</span><span class="number">50</span> <span class="var">&#62;</span> <span class="number">38</span><span class="first-group">)</span> <span class="comment">// Saída: true</span></code>
+<code></code>
+<code class="comment">// Usando o símbolo &#34;&#60;&#34; (menor)</code>
+<code>console.<span class="function">log</span><span class="first-group">(</span><span class="number">50</span> <span class="var">&#60;</span> <span class="number">38</span><span class="first-group">)</span> <span class="comment">// Saída: false</span></code>
+<code></code>
+<code class="comment">// Usando o símbolo &#34;==&#34; (igual)</code>
+<code>console.<span class="function">log</span><span class="first-group">(</span><span class="number">20</span> <span class="var">==</span> <span class="number">20</span><span class="first-group">)</span> <span class="comment">// Saída: true</span></code>
+<code></code></pre>
+        </li>
+        <li>
+          <h2>Funções</h2>
+          <p>
+            As funções são <strong>blocos de código que podem ser reutilizados em diferentes partes do programa</strong>. Elas <strong>facilitam a organização</strong> e a <strong>manutenção do código</strong>, permitindo que você divida tarefas complexas em partes menores e mais gerenciáveis.
+          </p>
+          <pre>
+<code class="comment">// Criando uma função</code>
+<code><span class="var">function</span> <span class="function">ola</span> <span class="first-group empty-content">() {</span></code>
+<code>  console.<span class="function">log</span><span class="first-group">(</span><span class="string">'Olá Mundo!'</span><span class="first-group">)</span></code>
+<code class="first-group">}</code>
+<code></code>
+<code class="comment">// Rodando a função</code>
+<code class="function">ola<span class="first-group empty-content">()</span> <span class="comment">// Saída: Olá Mundo!</span></code></pre>
+        </li>
+        <li>
+          <h2>Estruturas de controle</h2>
+          <p>
+            As estruturas de controle <strong>permitem que o fluxo do programa seja alterado com base em condições específicas</strong>. Os blocos condicionais, como <strong>&#34;if&#34;</strong> e <strong>&#34;else&#34;</strong>, permitem executar um trecho de código somente se uma determinada condição for verdadeira.
+          </p>
+          <pre>
+<code class="comment">// Criando uma função que inverte o booleano</code>
+<code><span class="var">function</span> <span class="function">inverterBooleano</span> <span class="first-group">(<span class="parameter">booleano</span>) {</span></code>
+<code class="var">  if (<span class="parameter">booleano</span>) <span class="comment">/* verifica se o booleano é verdadeiro */</span> {</code>
+<code class="var">    return <span class="number">false</span></code>
+<code class="var">  } else <span class="comment">/* Se não é verdadeiro... */</span> {</code>
+<code class="var">    return <span class="number">true</span></code>
+<code class="var">  }</code>
+<code class="first-group">}</code>
+<code></code>
+<code>console.<span class="function">log</span><span class="first-group">(</span><span class="function">inverterBooleano</span><span class="var">(<span class="number">true</span>)</span><span class="first-group">)</span> <span class="comment">// Saída: false</span></code>
+<code>console.<span class="function">log</span><span class="first-group">(</span><span class="function">inverterBooleano</span><span class="var">(<span class="number">false</span>)</span><span class="first-group">)</span> <span class="comment"> <span class="comment">// Saída: true</span></code></pre>
+        </li>
+        <li>
+          <h2>Loops</h2>
+          <p>
+            Os loops <strong>permitem que uma determinada parte do código seja repetida várias vezes</strong>. Por exemplo, o loop <strong>&#34;for&#34;</strong> pode executar uma sequência de instruções várias vezes, até que uma condição seja atendida.
+          </p>
+          <pre>
+<code class="comment">// Criando uma função que contará todos os números de 0</code>
+<code class="comment">// até o número passado como parâmetro</code>
+<code class="var">function <span class="function">contador</span> <span class="first-group">(<span class="parameter">numero</span>) {</span></code>
+<code>  <span class="var">for(let</span> i <span class="var">=</span> <span class="number">0</span>; i <span class="var">&#60;=</span> <span class="parameter">numero</span>; i<span class="var">++) {</span></code>
+<code>    console.<span class="function">log</span><span class="third-group">(</span>i<span class="third-group">)</span></code>
+<code class="var">  }</code>
+<code class="first-group">}</code>
+<code></code>
+<code class="function">contador<span class="first-group">(<span class="number">5</span>)</span></code>
+<code class="comment">// Saída-1: 0</code>
+<code class="comment">// Saída-2: 1</code>
+<code class="comment">// Saída-3: 2</code>
+<code class="comment">// Saída-4: 3</code>
+<code class="comment">// Saída-5: 4</code>
+<code class="comment">// Saída-6: 5</code></pre>
+        </li>
+      </ul>
+
+      <p>
+        Esses são apenas <strong>alguns dos conceitos básicos da programação</strong>. Conforme você avança em sua jornada, <strong>encontrará conceitos mais avançados</strong> e <strong>técnicas específicas de cada linguagem</strong>. A <strong>prática constante</strong> e a <strong>resolução de problemas reais</strong> são fundamentais para <strong>aprimorar suas habilidades de programação</strong>. Portanto, <strong>não tenha medo de experimentar, errar e aprender com os desafios que encontrar pelo caminho</strong>. Com <strong>dedicação</strong> e <strong>paciência</strong>, você estará preparado para enfrentar projetos cada vez <strong>mais complexos</strong> e <strong>gratificantes</strong> como programador.
+      </p>
+
+      <p>Agora que você já alguns conceitos básicos, vamos avançar no texto e explorar mais conceitos da programação:</p>
+
+      <ul>
+        <li>
+          <h2>Arrays</h2>
+          <p>
+            Um <strong>array</strong> é uma <strong>estrutura de dados que nos permite armazenar uma coleção de elementos em uma única variável</strong>. Cada elemento tem uma posição específica no array, chamada de <strong>índice</strong>. Em JavaScript, <strong>os índices começam em zero</strong>. Vejamos um exemplo de como criar e acessar elementos em um array:
+          </p>
+          <code>
+            <pre>
+<code class="comment">// Criando um array com alguns números</code>
+<code><span class="var">let</span> numeros <span class="var">=</span> <span class="first-group">[</span><span class="number">10</span>, <span class="number">20</span>, <span class="number">30</span>, <span class="number">40</span>, <span class="number">50</span><span class="first-group">]</span>;</code>
+<code></code>
+<code class="comment">// Acessando o elemento no índice 2 (valor 30)</code>
+<code><span class="var">let</span> terceiroNumero <span class="var">=</span> numeros<span class="first-group">[<span class="number">2</span>]</span>;</code>
+<code>console.<span class="function">log</span><span class="first-group">(</span>terceiroNumero<span class="first-group">)</span>; <span class="comment">// Saída: 30</span></code></pre>
+          </code>
+        </li>
+        <li>
+          <h2>Objetos</h2>
+          <p>
+            Em JavaScript, <strong>objetos</strong> são <strong>estruturas de dados que nos permitem representar entidades complexas com propriedades e métodos</strong>. As propriedades são pares de chave-valor, onde a <strong>chave é uma string que representa o nome da propriedade</strong> e o <strong>valor pode ser qualquer tipo de dado</strong>, inclusive outros objetos. Vejamos um exemplo:
+          </p>
+          <pre>
+<code class="comment">// Criando um objeto representando uma pessoa</code>
+<code><span class="var">let</span> pessoa <span class="var">=</span> <span class="first-group">{</span></code>
+<code>  nome<span class="var">:</span> <span class="string">&#39;João&#39;</span>,</code>
+<code>  idade<span class="var">:</span> <span class="number">25</span>,</code>
+<code>  profissao<span class="var">:</span> <span class="string">&#39;Desenvolvedor&#39;</span>,</code>
+<code><span class="first-group">}</span>;</code>
+<code></code>
+<code class="comment">// Acessando as propriedades do objeto</code>
+<code>console.<span class="function">log</span><span class="first-group">(</span>pessoa.nome<span class="first-group">)</span>; <span class="comment">// Saída: João</span></code>
+<code>console.<span class="function">log</span><span class="first-group">(</span>pessoa.idade<span class="first-group">)</span>; <span class="comment">// Saída: 25</span></code>
+<code>console.<span class="function">log</span><span class="first-group">(</span>pessoa.profissao<span class="first-group">)</span>; <span class="comment">// Saída: Desenvolvedor</span></code></pre>
+        </li>
+        <li>
+          <h2>Funções de Array</h2>
+          <p>
+            Em JavaScript, o <strong>objeto Array possui uma variedade de métodos úteis que podem ser aplicados diretamente a arrays</strong>. Esses métodos <strong>facilitam a manipulação</strong> e <strong>processamento dos dados contidos nos arrays</strong>. Vamos ver um exemplo de uso do método &#34;<strong>map</strong>&#34;, que cria um novo array com os resultados de uma função aplicada a cada elemento do array original:
+          </p>
+          <pre>
+<code class="comment">// Criando um array de números</code>
+<code><span class="var">let</span> numeros <span class="var">=</span> <span class="first-group">[</span><span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span><span class="first-group">]</span>;</code>
+<code></code>
+<code class="comment">// Usando o método map para dobrar cada número</code>
+<code><span class="var">let</span> numerosDobrados <span class="var">=</span> numeros.<span class="function">map</span><span class="first-group">(</span><span class="var">(</span><span class="parameter">numero</span><span class="var">) =&#62;</span> numero <span class="var">*</span> <span class="number">2</span><span class="first-group">)</span>;</code>
+<code>console.<span class="function">log</span><span class="first-group">(</span>numerosDobrados<span class="first-group">)</span>; <span class="comment">// Saída: [2, 4, 6, 8, 10]</span></code></pre>
+        </li>
+        <li>
+          <h2>Orientação a Objetos</h2>
+          <p>
+            JavaScript suporta <strong>programação orientada a objetos</strong>, onde podemos criar classes e <strong>instanciar objetos baseados nessas classes</strong>. Uma <strong>classe</strong> é <strong>uma &#34;receita&#34; para criar objetos com propriedades e métodos comuns</strong>. Vejamos um exemplo de uma classe &#34;Pessoa&#34;:
+          </p>
+          <pre>
+<code class="comment">// Definindo a classe Pessoa</code>
+<code><span class="var">class</span> <span class="class">Pessoa</span> <span class="first-group">{</span></code>
+<code><span class="var">  constructor</span><span class="var">(</span><span class="parameter">nome</span>, <span class="parameter">idade</span><span class="var">) {</span></code>
+<code>    <span class="number">this</span>.nome <span class="var">=</span> nome;</code>
+<code>    <span class="number">this</span>.idade <span class="var">=</span> idade;</code>
+<code class="var">  }</code>
+<code></code>
+<code class="var">  <span class="function">saudacao</span>() {</code>
+<code>    console.<span class="function">log</span><span class="third-group">(</span><span class="string">&#96;Olá, meu nome é </span><span class="first-group">${</span><span class="number">this</span>.nome<span class="first-group">}</span><span class="string"> e tenho </span><span class="first-group">${</span><span class="number">this</span>.idade<span class="first-group">}</span><span class="string"> anos.&#96;</span><span class="third-group">)</span>;</code>
+<code class="var">  }</code>
+<code class="first-group">}</code>
+<code></code>
+<code class="comment">// Criando um objeto pessoa a partir da classe</code>
+<code><span class="var">let</span> pessoa1 <span class="var">=</span> <span class="new var">new</span> <span class="function">Pessoa</span><span class="first-group">(</span><span class="string">&#39;Maria&#39;</span>, <span class="number">30</span><span class="first-group">)</span>;</code>
+<code><span class="var">let</span> pessoa2 <span class="var">=</span> <span class="new var">new</span> <span class="function">Pessoa</span><span class="first-group">(</span><span class="string">&#39;Carlos&#39;</span>, <span class="number">28</span><span class="first-group">)</span>;</code>
+<code></code>
+<code>pessoa1.<span class="function">saudacao</span><span class="first-group">()</span>; <span class="comment">// Saída: Olá, meu nome é Maria e tenho 30 anos.</span></code>
+<code>pessoa2.<span class="function">saudacao</span><span class="first-group">()</span>; <span class="comment">// Saída: Olá, meu nome é Carlos e tenho 28 anos.</span></code></pre>
+        </li>
+      </ul>
+
+      <p>
+        Esses são apenas alguns dos <strong>conceitos mais importantes em programação usando JavaScript</strong>. À medida que você <strong>continua aprendendo</strong> e <strong>praticando</strong>, descobrirá muitos outros recursos poderosos que essa linguagem tem a oferecer. Lembre-se de <strong>sempre aplicar esses conceitos em projetos práticos</strong>, pois é a <strong>melhor maneira de aprimorar suas habilidades de programação</strong>.
+      </p>
+      <p>
+        À medida que você se aprofunda na programação, percebe que o <strong>universo desse campo é vasto e emocionante</strong>. Além dos conceitos abordados aqui, existem muitos outros tópicos interessantes a explorar, como <strong>assincronismo</strong>, <strong>manipulação de eventos</strong>, <strong>acesso a APIs externas</strong> e muito mais.
+      </p>
+      <p>
+        Portanto, encorajo você a continuar estudando e praticando, seja <strong>resolvendo problemas em plataformas de programação</strong>, <strong>participando de projetos de código aberto</strong> ou <strong>criando suas próprias aplicações</strong>. Com <strong>cada desafio superado</strong>, você <strong>ganhará mais confiança</strong> e <strong>habilidades</strong> para <strong>enfrentar problemas complexos</strong> e <strong>criar soluções inovadoras</strong>.
+      </p>
+      <p>
+        Lembre-se de que <strong>a programação é uma jornada de aprendizado contínuo</strong>. Não tenha medo de cometer erros, pois é através deles que <strong>aprendemos</strong> e <strong>evoluímos</strong> como desenvolvedores. Aproveite a <strong>comunidade ativa de programadores</strong>, onde você pode <strong>compartilhar conhecimentos</strong>, <strong>obter ajuda</strong> e <strong>se inspirar em outras pessoas</strong>.
+      </p>
+      <p>
+        Espero que este post tenha lhe proporcionado uma <strong>visão geral dos fundamentos da programação</strong>. Agora é o momento de <strong>mergulhar mais fundo</strong>, <strong>explorar novos conceitos</strong> e <strong>aplicações</strong>, e, acima de tudo, <strong>aproveitar o processo de criação através da programação</strong>.
+      </p>
+      <p>
+        <strong>Aproveite essa jornada</strong>, <strong>celebre suas conquistas</strong> e <strong>nunca deixe de explorar e descobrir coisas novas</strong>. A programação é uma <strong>habilidade poderosa</strong> que pode <strong>abrir portas para inúmeras oportunidades e projetos incríveis</strong>. Então, <strong>coloque a mão na massa</strong> e <strong>continue progredindo em direção a um futuro brilhante como desenvolvedor</strong>!
+      </p>
+      <p>
+        Boa codificação e sucesso em sua jornada de programação!
+      </p>
+    </div>  
+  </main>
+
+  <footer>
+    <div>
+        <div id="logo">
+            <a href="../../index.html">The Blog<span>.</span></a>
+        </div>
+        <p>© 2023 The Blog. | Todos os Direitos Reservados</p>
+    </div>
+  </footer>
+
+  <script src="../../index.js"></script>
+</body>
+</html>

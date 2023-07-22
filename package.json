@@ -1,0 +1,16 @@
+{
+  "name": "blog",
+  "version": "0.0.1",
+  "homepage": "https://prodev205.github.io/",
+  "scripts": {
+    "deploy": "gh-pages -d ."
+  },
+  "author": {
+    "name": "ZTH",
+    "email": "godmiracle205@gmail.com",
+    "url": "https://prodev205.github.io/"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}
