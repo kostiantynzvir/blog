@@ -9,13 +9,13 @@ https://prodev205.github.io/blog/
 
 # Layout Web 🖥️
 
-<img src="https://github.com/prodev205/RocketBlog/blob/main/images/readMe/web.png" />
+<img src="https://github.com/prodev205/js-html-css-blog/blob/main/images/readMe/web.png" />
 
 # Layout Mobile 📱
 
 <p>
-  <img src="https://github.com/prodev205/RocketBlog/blob/main/images/readMe/mobile1.jpg" height="830"/>
-  <img src="https://github.com/prodev205/RocketBlog/blob/main/images/readMe/mobile2.jpg" height="830"/>
+  <img src="https://github.com/prodev205/js-html-css-blog/blob/main/images/readMe/mobile1.jpg" height="830"/>
+  <img src="https://github.com/prodev205/js-html-css-blog/blob/main/images/readMe/mobile2.jpg" height="830"/>
 </p>
 
 # Technologies ⚡
